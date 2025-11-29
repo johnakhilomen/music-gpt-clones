@@ -1,10 +1,12 @@
 pub use audio_generation_backend::JobProcessor;
+pub use extended_audio_backend::{ExtendedJobProcessor, MusicGPTSegmentGenerator};
 pub use server::*;
 
 #[cfg(test)]
 mod _test_utils;
 mod audio_generation_backend;
 mod audio_generation_fanout;
+mod extended_audio_backend;
 mod music_gpt_chat;
 mod music_gpt_ws_handler;
 mod server;
